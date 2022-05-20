@@ -8,7 +8,8 @@
 
 //-------JavaScript String length-----------//
 // sintaxis str.length
-// Nos dice el numero de caracteres en un string.
+// Nos dice el numero de caracteres en un string
+// no es un método sino una propiedad
 
 // Ejemplo
 // asignamos un valor string a una variable
@@ -18,6 +19,3 @@ let sentence = "Hola koders!";
 let len = sentence.length;
 
 console.log(len);
-
-// Output:
-// 17

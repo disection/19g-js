@@ -9,7 +9,34 @@
     P.ej: En tu ciudad, el día está “Soleado” con una temperatura de 100ºF
     */
 
-    let weather = parseInt( prompt('cómo esta el clima en su ciudad', a) )
+    // let weather = parseInt( prompt('cómo esta el clima en su ciudad', a) )
+    // let celsius = parseInt( prompt('cuál es la temperatura aproximada en ºC', 20) )
+    // 
+    // if( celsius === null ) {
+    //     console.log('temperaura mal, vuelve a ingresar')    
+    // } else {
+    //     let f = parseInt(celsius) * 9/5 + 32       
+    // }
+    // switch (weather) {
+    //     case a:
+    //         console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+    //         break
+    //     case b: 
+    //         console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+    //         break
+    //     case c: 
+    //         console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+    //         break
+    //     case d: 
+    //         console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+    //         break
+    //     default:
+    //         console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+    //         break
+    // }
+
+    // Corrección de tarea
+    let weather = parseInt( prompt('cómo esta el clima en su ciudad: a. Soleado b. Lluvioso c. Nevado d. Nublado', a) )
     let celsius = parseInt( prompt('cuál es la temperatura aproximada en ºC', 20) )
     
     if( celsius === null ) {
@@ -17,20 +44,20 @@
     } else {
         let f = parseInt(celsius) * 9/5 + 32       
     }
-    switch (weather) {
+    switch (weather.toLowerCase()) {
         case a:
-            console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+            console.log(`En tu ciudad, el día está Soleado con una temperatura de ${f} ºF`)
             break
         case b: 
-            console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+            console.log(`En tu ciudad, el día está Lluvioso con una temperatura de ${f} ºF`)
             break
         case c: 
-            console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+            console.log(`En tu ciudad, el día está Nevado con una temperatura de ${f} ºF`)
             break
         case d: 
-            console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+            console.log(`En tu ciudad, el día está Nublado con una temperatura de ${f} ºF`)
             break
         default:
-            console.log(`En tu ciudad, el día está ${weather} con una temperatura de ${f} ºF`)
+            console.log(`Por favor ingresa una opción valida`)
             break
     }
