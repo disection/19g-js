@@ -19,3 +19,34 @@ let sentence = "Hola koders!";
 let len = sentence.length;
 
 console.log(len);
+
+//-----------ejercicio 1-------------//
+const message = 'Hola Koders'
+/**
+ * 'Hola Koders'
+ * Cuantas vocales existen
+*/
+let re = /[aeiou]/gi
+let result = message.match(re);
+
+/**
+ * 'Hola Koders'
+ * Cuantos caracteres son
+*/
+let numbers = message.length;
+console.log(numbers);
+
+/**
+ * 'Hola Koders'
+ * Cortar el string en 2 strings 
+ * -> "hola" "koders"
+*/
+let cortar = message.split(" ");
+
+/**
+ * 'Hola Koders'
+ * Reemplazar todas las Vocales por *
+ * -> "h*l* k*d*rs"
+*/
+pattern = /[aeiou]/gi,"*"
+let new_message = message.replace(pattern)
