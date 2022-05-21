@@ -40,11 +40,12 @@
  * ....
  * 3 x 10 = 30
  */
-//  let number = parseInt( prompt('cuál tabla de multiplicar quieres resolver', 1) )
-//  for (let i = 1; i <= 10; i++) {
-//      res = number * i
-//      console.log(`${number} * ${i} = ${res}`)
-//  }
+  let number = parseInt( prompt('cuál tabla de multiplicar quieres resolver', 1) )
+  
+  for (let i = 1; i <= 10; i++) {
+      res = number * i
+      console.log(`${number} * ${i} = ${res}`)
+  }
  
 
 /**
@@ -56,20 +57,20 @@
  * Consonantes -> hlmnd
  * Vocales -> oauo
  */
-let str = parseInt( prompt('qué estas pensando', 'dime') )
-for (let i ; i < str.length; i++) {
-    letters = str[i];
-    if (
-        consonantes == 'a' || 
-        consonantes == 'e' || 
-        consonantes == 'i' || 
-        consonantes == 'o' || 
-        consonantes == 'u'
-    ){
-        console.log(`Consonantes ${letters}`)
-    }
+// let str = parseInt( prompt('qué estas pensando', 'dime') )
+// for (let i ; i < str.length; i++) {
+//     letters = str[i];
+//     if (
+//         consonantes == 'a' || 
+//         consonantes == 'e' || 
+//         consonantes == 'i' || 
+//         consonantes == 'o' || 
+//         consonantes == 'u'
+//     ){
+//         console.log(`Consonantes ${letters}`)
+//     }
     
-}
+// }
 
 
 /**
@@ -80,11 +81,11 @@ for (let i ; i < str.length; i++) {
  * p.ej. 12 -> 2,4,6,8,10,12
  * 
  */
-let number = parseInt( prompt('escribe un número del 1 al 100', '1') )
-for ( let i = 1; i <= number; i++ ) {
+// let number = parseInt( prompt('escribe un número del 1 al 100', '1') )
+// for ( let i = 1; i <= number; i++ ) {
     
-    console.log(`numeros pares que existen entre 1 y 100 ${i}`)
-}
+//     console.log(`numeros pares que existen entre 1 y 100 ${i}`)
+// }
 
 /**
  * 
