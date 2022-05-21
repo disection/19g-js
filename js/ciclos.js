@@ -135,3 +135,20 @@ while ( i < str.length) {
  * Imprimir en consola cada una de las consonantes
  * 
  */ 
+
+
+
+
+let counter = 0
+do {
+    consoleo.log(str[counter])
+    counter++
+} while (counter <= fin)
+
+const nameUser = window.prompt('Escribe una palabra')
+let AuxStr = ''
+let end = nameUser.length -1
+
+do {
+    
+} while (condition);
