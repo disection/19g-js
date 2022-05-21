@@ -8,11 +8,11 @@
 
 //Example
 // let number = parseInt( prompt('qué número te gusta', 8) )
-// let i = 1 //la variable se puede volver a ocupara o reasignarle un valor porque esta fuera del ciclo
-// while (i <= number) {
-//    console.log(`hoy sonrie ${i} while se repite esta condición`)
-//    i++
-// }
+let i = 1 //la variable se puede volver a ocupara o reasignarle un valor porque esta fuera del ciclo
+while (i <= number) {
+   console.log(`hoy sonrie ${i} while se repite esta condición`)
+   i++
+}
 
 /* ----------------Do  White Loop -------------------- */
 //sintáxis
@@ -21,14 +21,15 @@
 // } while (condition); // de esta forma almenos una vez existe el ciclo antes de while
 
 //Example
-// number = parseInt( prompt('cuál es tu número favorito', 8) )
-// do {
-//     console.log(` ${i} es tu suerte`)
-//     i++;
-//   }
-//   while (i < 10);
+number = parseInt( prompt('cuál es tu número favorito', 8) )
+do {
+    console.log(` ${i} es tu suerte`)
+    i++;
+  }
+  while (i <= number);
 
 // Utilizar Condicionales, Ciclo for, Metodos de string
+
 
 /**
  * Ejercicio 2
@@ -56,20 +57,20 @@
  * Consonantes -> hlmnd
  * Vocales -> oauo
  */
-let str = parseInt( prompt('qué estas pensando', 'dime') )
-for (let i ; i < str.length; i++) {
-    letters = str[i];
-    if (
-        consonantes == 'a' || 
-        consonantes == 'e' || 
-        consonantes == 'i' || 
-        consonantes == 'o' || 
-        consonantes == 'u'
-    ){
-        console.log(`Consonantes ${letters}`)
-    }
+// let str = parseInt( prompt('qué estas pensando', 'dime') )
+// for (let i ; i < str.length; i++) {
+//     letters = str[i];
+//     if (
+//         consonantes == 'a' || 
+//         consonantes == 'e' || 
+//         consonantes == 'i' || 
+//         consonantes == 'o' || 
+//         consonantes == 'u'
+//     ){
+//         console.log(`Consonantes ${letters}`)
+//     }
     
-}
+// }
 
 
 /**
@@ -80,11 +81,11 @@ for (let i ; i < str.length; i++) {
  * p.ej. 12 -> 2,4,6,8,10,12
  * 
  */
-let number = parseInt( prompt('escribe un número del 1 al 100', '1') )
-for ( let i = 1; i <= number; i++ ) {
+// let number = parseInt( prompt('escribe un número del 1 al 100', '1') )
+// for ( let i = 1; i <= number; i++ ) {
     
-    console.log(`numeros pares que existen entre 1 y 100 ${i}`)
-}
+//     console.log(`numeros pares que existen entre 1 y 100 ${i}`)
+// }
 
 /**
  * 
