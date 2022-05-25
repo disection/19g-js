@@ -158,3 +158,51 @@ const palindromo= (str) => {
 let frase = prompt('ingresa una frase', 'Lavan esa base naval')
 
 console.log(palindromo(frase))
+
+/************** ejercicio de Jorge **********************/
+// Arrow fuunction
+// Pedir al usuario una cadena de texto
+// Verificar si esa oracion es un palindromo
+// isPalindrome('hola') -> No es un palindromo
+// isPalindrome('oso') -> SI es un palindromo
+
+// anita lava la tina
+// oso
+// seres
+
+// funcion de retorno
+const isPalindrome = ( str ) => {
+    // sentencias
+    let strWithOutSpaces = str.trim().replaceAll(/\s/g,'').toLowerCase()
+    let strReversed = ''
+    console.log(strWithOutSpaces)
+
+    for(i = strWithOutSpaces.length - 1; i >= 0; i--){
+        strReversed += strWithOutSpaces[i]
+    }
+
+    if(strWithOutSpaces === strReversed){
+        return 'SI es un palindromo'
+    } else {
+        return 'No es un palindromo'
+    }
+}
+/*****************Ejercicio de Marcos ****************** */
+// Arrow function
+// Pedir al usuario una cadena de texto
+// Verificar si esa oración es un palíndromo
+const isPalindromo = (str) => {
+    //sentencias
+    let strWithouthSpaces = str.toLowerCase().replaceAll(" ", "");
+    let isThisAPalindrome = true;
+    let strSize = strWithouthSpaces.length - 1;
+  
+    for (let i = strSize; i >= 0; i--) {
+      if (strWithouthSpaces[i] !== strWithouthSpaces[strSize - i]) {
+        isThisAPalindrome = false;
+        break;
+      }
+    }
+  
+    return isThisAPalindromo;
+  };
