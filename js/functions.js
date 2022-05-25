@@ -37,8 +37,12 @@
 //     alert(`"[WHILE]La sumatoria total del 1 hasta el ${number} es ${result}"`);
 //   }
   
-function sumaTres ( numberOne = 0 , numberTwo = 0 , numberThree =0 ){     
-    return numberOne + numberTwo + numberThree
+function sumaTres ( numberOne = 0 , numberTwo = 0 , numberThree =0 ){ 
+    if ( !(numberOne && numberTwo && numberThree) ) {
+        console.error('Existen valores no definidos')
+    } else{
+        return numberOne + numberTwo + numberThree
+    }       
 }
   
 let a = parseInt(prompt("Escribe un número", 1));
@@ -46,4 +50,6 @@ let b = parseInt(prompt("Escribe otro número", 1));
 let c = parseInt(prompt("Escribe un último número", 1));
 
 let suma = sumaTres(a, b, c)
-console.log (suma)
+//console.log (suma)
+
+
