@@ -8,15 +8,16 @@
  * -> evenOnly() -> 'Se necesita un array'
  * 
  */
- evenOnly = (numbersArray) => {
+
+ evenOnly = (arrNumber) => {
     let onlyEvenNumbers = [];
   
-    if (numbersArray) {
-      let arrayLenght = numbersArray.length;
+    if (arrNumber) {
+      let arrayLenght = arrNumber.length;
   
       for (let i = 0; i < arrayLenght; i++) {
-        if (numbersArray[i] % 2 === 0) {
-          onlyEvenNumbers.push(numbersArray[i]);
+        if (arrNumber[i] % 2 === 0) {
+          onlyEvenNumbers.push(arrNumber[i]);
         }
       }
   
@@ -25,6 +26,7 @@
       return "Se necesita un array";
     }
   }
+
 /**
  * Ejercicio 2 *Opcional
  * Funcion que reciba como parametro una array de strings
@@ -32,14 +34,15 @@
  * p.ej.
  * -> firstAndLast ( ['hola', 'mundo'] ) -> ['ha', 'mo']
  */
-  firstAndLast = (strArray) => {
+
+  firstAndLast = ( arr ) => {
     let lettersArray = [];
   
-    if (strArray) {
-      let strArraySize = strArray.length;
+    if ( arr ) {
+      let arrSize = arr.length;
   
-      for (let i = 0; i < strArraySize; i++) {
-        lettersArray.push(strArray[i].substring(0, 1) + strArray[i].slice(-1));
+      for (let i = 0; i < arrSize; i++) {
+        lettersArray.push( arr[i].substring(0, 1) + arr[i].slice(-1) );
       }
   
       return lettersArray;
