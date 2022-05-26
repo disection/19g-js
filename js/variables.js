@@ -22,7 +22,8 @@ const PI = 3.1416
 // let para variables
 // const para constantes
 
-//concatenar variables---------------------
+//concatenar variables
+// operador typeof -> sirve para poder saber que tipo de variable es
 let valor1 = 4
 let valor2 = 5
 
@@ -34,16 +35,17 @@ let nombreConcatenado = 'Hola '+ koderExample
 console.log(nombreConcatenado)
 
 // template strings + string literals-------------- buenas prácticas
-// placeholders
+// placeholders -> espacio designado para poner una variable ${}
 // `string ${variables}`
 const age = 30
-console.log(`otra cosa ${koderExample}, cómo estas? Tienes ${age + 5} son las 20:30 ${koder}`)
+console.log(`otra cosa ${koderExample}, cómo estas? Tienes ${age + 5} son las 20:30 ${koder}`) //también puedo hacer operaciones dentro del placeholder
 
 // Pedir variables al usuario
+// formularios
 // prompt (mensaje, valorDelMensajePorDefecto)
 
 /*
-let nombreKoder = prompt ('Dame tu nombre', 'Jorge')
+let nombreKoder = prompt('Dame tu nombre', 'Jorge')
 
 if(nombreKoder === null){
      console.log('Nombre vacio')
