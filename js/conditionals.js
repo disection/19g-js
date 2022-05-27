@@ -26,17 +26,17 @@ total =  a + b
 
 /* ----------- Condicionales  if / else if / else ---------------*/
 
-// if ( 2 === "2" ) { // false
-//     console.log('son iguales')
-//     // pueden ir más indicaciones ...
-// } else if ( 3 ===  "3" ) { //false
-//     console.log('son iguales 3')
-// } else {
-//     //default
-//     console.log('por defecto')
-// }
+if ( 2 === "2" ) { // false
+    console.log('son iguales')
+    // pueden ir más indicaciones ...
+} else if ( 3 ===  "3" ) { //false
+    console.log('son iguales 3')
+} else {
+    //default
+    console.log('por defecto')
+}
 
-// console.log('entro aquí')
+console.log('entro aquí')
 
 
 // ----------------Operador ternario
