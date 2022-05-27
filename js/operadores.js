@@ -7,7 +7,9 @@ let modulo = 5 % 2 //devuelve el residuo de una división
 console.log( a )
 console.log( modulo )
 
-/* Operadores relacionales >, <, >=, <=, ==, ===, !=, !== */
+/* Operadores relacionales 
+>, <, >=, <=, ==, ===, !=, !== */
+
 
 console.log( 8 > 9 )
 console.log( 9 > 8 )
@@ -15,10 +17,13 @@ console.log( 8 >= 9 )
 console.log( 7 < 7 )
 console.log( 7 >= 7 ) // se incluye en la comparaión del valor que estas dando
 
-/*
+/* Operadores de comparación el resultado siempre va a ser booleano true - false
 = -> es asignación de variable
 == -> comparación solamente los valores
-=== -> comparación de tipo de datos y de valores BUENA PRÁCTICA
+=== -> estrictamente igual comparación de tipo de datos y de valores BUENA PRÁCTICA
+!== -> estrictamente diferente comparación de tipo de datos y de valores BUENA PRÁCTICA
+!= -> comparación solamente los valores
+
 */
 console.log( 7 == 7)
 console.log( '7' == 7 )

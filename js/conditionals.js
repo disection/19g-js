@@ -24,10 +24,11 @@ total =  a + b
 
 // console.log(total)
 
-// if( 2 === "2" ) { // false
-//     console.log('son iguales 2')
-//     // pueden ir más indicaciones ..
+/* ----------- Condicionales  if / else if / else ---------------*/
 
+// if ( 2 === "2" ) { // false
+//     console.log('son iguales')
+//     // pueden ir más indicaciones ...
 // } else if ( 3 ===  "3" ) { //false
 //     console.log('son iguales 3')
 // } else {
