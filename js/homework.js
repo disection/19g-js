@@ -9,8 +9,16 @@
  *
  * Implementar soluciones con
  * .split()
+ * el split te devuelve un array
  */
+let email = 'jlcc170@gmail.com'
 
+const emailToMask = ( numberToMark ) => {
+    let mask = emailToMask.split('@')
+    
+    
+}
+console.log(emailToMask(email))
 /**
  * Escribir una funcion, Que dado un string, 
  * retorne si el string inicia y termina con una vocal
