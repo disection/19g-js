@@ -49,6 +49,7 @@ employesAndTotal(salarios)
     avatar: "https://picsum.photos/200/300"
 }
 
+
 /**
  * Estudiar los metodos de objetos
  * https://www.w3schools.com/js/js_object_methods.asp
