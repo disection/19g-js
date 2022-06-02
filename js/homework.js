@@ -1,51 +1,58 @@
+// Ejercicio
 /**
- * Solucionar  3 ejercicios mínimo de esta lista 
+ * Del siguiente objeto
+ * Realizar una función que 
+ * 1. Calcule el numero de empleados
+ * 2. Obtenga el total a pagar
+ * employesAndTotal( { 'Albert': 50000, 'jorge': 50000 })
+ * -> Son 3 empleados y el total es 100000
  */
 
-/**
- * Escribir una funcion que reciba como parametro un correo electronico
- * y que retorne lo siguiente
- * -> maskEmail('jlcc170@gmail.com') -> *******@gmail.com
- *
- * Implementar soluciones con
- * .split()
- * el split te devuelve un array
- */
-let email = 'jlcc170@gmail.com'
-
-const emailToMask = ( numberToMark ) => {
-    let mask = emailToMask.split('@')
-    
-    
+ let salarios = {
+    'juan': 30000,
+    'Albert': 50000,
+    'jorge': 50000
 }
-console.log(emailToMask(email))
-/**
- * Escribir una funcion, Que dado un string, 
- * retorne si el string inicia y termina con una vocal
- * p.ej. 
- * isVowelSandwich("cat") ➞ true
- * isVowelSandwich("ear") ➞ false
- * isVowelSandwich("bake") ➞ false
- * isVowelSandwich("dog") ➞ true
 
- * Implementar soluciones con
- * .slice()
- * .substring()
- * .charAt()
+const employesAndTotal = ( obj ) => {
+    let total = 0
+    let numberEmployes = 0
+
+    for(elemento in obj){
+        total += obj[elemento]
+        numberEmployes++
+    }
+    return console.log (` Son ${numberEmployes} empleados y el total de los salarios es de ${total}`)
+
+}
+employesAndTotal(salarios)
+
+/**
+ * Ejercicio 2.
+ * Dado un objeto inicial, hacer los siguientes puntos 
  * 
+ * 1. Agregar el lenguaje 'Go' a la lista de lenguajes
+ * 2. Cambiar el nivel a 4
+ * 3. Eliminar la propiedad avatar
+ * 4. Agregar una nueva propiedad de edad y poner el valor de 30
+ * 5. Imprimir en consola todos los lenguajes dominados
+ * 6. Clonar el objeto en uno nuevo
+ * 7. Imprimir en consola el nuevo objeto
+ * 
+ * @hint https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
  */
 
-/**
- * Escribir una funcion, Que dado un string, 
- * retorne si el string solo contiene letras y espacio
- * p.ej. 
- * lettersOnly("JAVAscript") ➞ true
- * lettersOnly("12321313") ➞ false
- * lettersOnly("i have spaces") ➞ true
- * lettersOnly("i have spaces!!!") ➞ false
+ let koder = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isMentor: true,
+    level: 3,
+    avatar: "https://picsum.photos/200/300"
+}
 
- * Implementar soluciones con
- * .test()
- * .match()
+/**
+ * Estudiar los metodos de objetos
+ * https://www.w3schools.com/js/js_object_methods.asp
+ * https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript
+ * https://www.programiz.com/javascript/library/object/assign
  * 
  */
