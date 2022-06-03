@@ -57,3 +57,54 @@ employesAndTotal(salarios)
  * https://www.programiz.com/javascript/library/object/assign
  * 
  */
+let koders = [
+    {
+        name : 'Erik',
+        lastName: 'Gutierrez',
+        age : 20,
+        generation : 15,
+        modulos : ['Node'],
+    },
+    {
+        name : 'Erik',
+        lastName: 'Gutierrez',
+        age : 20,
+        generation : 15,
+        modulos : ['Node'],
+    }
+]
+koders.forEach((objCompleto, index, arrayObj)=>{
+    console.log(`${objCompleto.name} ${objCompleto.lastname} tiene ${objCompleto.age}años y es de la generación ${objCompleto.generation}`)
+})
+//---------------------
+let totalAge = 0
+koders.forEach( ( objCompleto, index, arrayObj )=>{
+    totalAge = totalAge + objCompleto.age
+})
+console.log(totalAge)
+//-------------------
+let totalModules = 0
+koders.forEach( ( objCompleto, index, arrayObj )=>{
+    totalModules = objCompleto.modulos.length
+})
+console.log(totalModules)
+//-----------------------
+let totalAgeRed = koders.reduce( (acc, cv) => {acc + cv.age} , 0 )
+console.log(totalAgeRed)
+
+
+let library = [
+    {
+        author : 'Bill Gates',
+        title : 'The Road Ahea',
+        readingStatus : true
+    }
+]
+
+let totalReading = library.reduce ((total, libro)=> {
+    return libro.readingStatus ? total += : total
+})
+
+
+
+//-----------------------------------
