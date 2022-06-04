@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class thirteen</title>
+    <title>Class fourteen</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
-    <h1  class="title" id="title">Lorem</h1>
-    <div class="content">
-        <h2 class="subtitle">subtitulo</h2>
-        <h3 class="subtitle2">subtitulo</h3>
-    </div>
-    <ul>
-        <li class="item"> item 1</li>
-        <li class="item"> item 2</li>
-        <li class="item"> item 3</li>
-        <li class="item"> item 4</li>
-        <li class="item"> item 5</li>
-    </ul>
+    <h1>Dom Events</h1>
+    <button onclick="clickBoton()"> click me! </button>
+    <button onclick="clickBoton2()"> click me 2! </button>
+    <button onclick="enviar()"> enviar </button>
+    <button onclick="calcular()"> calcular </button>
 
+    <!-- teclado-->
+    <input 
+        type="text" 
+        onkeydown="escribiendo()"
+        onkeypress="presionando()"
+        onkeyup="escribiendo()"
+        onfocus="focoEnInput()"
+    >
+    <input type="text" oncopy="copyText()" value="Try to copy this text">
+    <p id="demo"></p>
     
-    <script src="/js/dom.js"></script>
+    <button onclick="tarea1()"> Ver ejercicio 1 </button>
+    <button onclick="tarea2()"> ver ejercicio 2 </button>
+    <button onclick="tarea3()"> Ver ejercicio 3 </button>
+
+
+    <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
     
+    
+    <script src="/js/domEvents.js"></script>    
 </body>
 </html>
