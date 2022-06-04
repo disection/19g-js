@@ -1,3 +1,5 @@
+// template strings + string literals-------------- buenas prácticas
+
 // backtick (`) characters -> multi-line strings, string interpoletion, tagged templates
 //Syntax
 

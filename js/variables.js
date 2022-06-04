@@ -54,6 +54,15 @@ if(nombreKoder === null){
     // ...
 }
 
+// es la misma estructura pero cambio la estructura de la condición
+if(nombreKoder !== null){
+     console.log('Nombre vacio')}
+     // ...
+}else{
+    console.log(nombreKoder)
+    // ...
+}
+
 // Convertir strings a números
 let ageKoder = prompt('Dame tu edad', 30)
 console.log(ageKoder)
@@ -74,8 +83,3 @@ if(temperatura !== null){
     console.log('No se ingresaron datos')
 }
 
-
-
-
-
-//Condicionales
