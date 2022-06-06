@@ -5,9 +5,19 @@
 
 let celsius = prompt('Temperatura', 10)
 if( celsius === null ) {
-    console.log('temperaura mal, vuelve a ingresar')    
+    console.log('temperatura mal, vuelve a ingresar')    
 } else {
     let f = parseInt(celsius) * 9/5 + 32
     let message = `La temperatura en °F ${f}`
-    window.alert(message) 
+    console.log(message) // mostrar en consola el resultado
+}
+
+
+let gradeCelcius = prompt('temperature', 21)
+if ( gradeCelcius !== null ) {
+    let gradeF = parseInt(gradeCelcius) * 9/5 + 32
+    let message = `La temperatura es de ${gradeF} °F`
+    window.alert( message )
+} else {
+    window.alert( `dato no valido` ) //muestra el mensaje en una ventana de alerta
 }

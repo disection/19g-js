@@ -39,8 +39,9 @@ if ( 2 === "2" ) { // false
 console.log('entro aquí')
 
 
-// ----------------Operador ternario
-// sintaxiss-------expresion ? true : false
+// OPERADOR TERNARIO -----------------
+// sintaxis
+// expresion ? true : false
 
 let numero = 3
 
@@ -54,7 +55,7 @@ let numero = 3
 //------------simplificamos con operador ternario una línea
 // numero % 2 === 0 ? console.log('Es par') : console.log('es impar')
 
-// --------------es lo mismo pero indentado si cabe no es necesario pero es más legible de esta forma
+// -----------es lo mismo pero indentado si cabe no es necesario pero es más legible de esta forma
 // numero % 2 === 0 
 //     ? 
 //     console.log('es par')
@@ -65,7 +66,7 @@ let numero = 3
 // let esPar = numero % 2 === 0 ? true : false
 // console.log(`El numero ${numero} es ${esPar === true ? 'par' : 'impar' } `)
 
-// switch
+// SWITCH--------------------------
 //let age = parseInt( prompt('cuál es tu edad', 17) )
 
 //switch (age) {
@@ -82,16 +83,30 @@ let numero = 3
 
 // puedes sustituir los valores numericos por valores booleanos
 let age = parseInt( prompt('cuál es tu edad', 15) )
-let isAge = age >= 18 ? true : false
+// let isAge = age >= 18 ? true : false
 
-switch (isAge) {
+// switch (isAge) {
+//     case true:
+//         console.log('eres mayor de edad')
+//         break
+//     case false: 
+//         console.log('eres menor de edad')
+//         break
+//     default:
+//         console.log('no es una edad valida')
+//         break
+// }
+
+let adult = age >= 18 ? true : false
+switch (adult) {
     case true:
-        console.log('eres mayor de edad')
+        console.log(`eres mayor de edad`)
         break
-    case false: 
-        console.log('eres menor de edad')
+    case false:
+        console.log(`eres menor de edad`)
         break
     default:
-        console.log('no es una edad valida')
+        console.log(`no es una edad valida`)
         break
 }
+

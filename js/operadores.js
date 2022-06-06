@@ -1,5 +1,5 @@
 /* Operadores */
-/* Aritméticos  + - * / % () */
+/* Aritméticos  + - * / % () * /
 
 let a = 5 + ( 5 - 10 ) * 30
 let modulo = 5 % 2 //devuelve el residuo de una división
@@ -53,6 +53,6 @@ i--
 */
 console.log ( !true )
 console.log ( !false )
-console.log ((9 === 9) || ( 9 ===9 ))
-console.log ((9 === 9) && ( '9' ===9 ))
+console.log ((9 === 9) || ( 9 === 9 ))
+console.log ((9 === 9) && ( '9' === 9 ))
 console.log ((9 === 9) && ( '9' === '9' ))

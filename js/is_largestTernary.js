@@ -21,3 +21,20 @@ first !== second ? (
     ) // aqui termina el primer caso
     :
     console.log('Son iguales') //aqui esta el segundo caso donde comprobamos la igualdad
+
+let numberA = parseInt(prompt('ingresa un número', 5 ))
+let numberB = parseInt(prompt('ingresa otro número para compararlo', 5 ))
+
+let numberLess = numberA < numberB ? 
+    console.log( `${numberA} es menor que ${numberB}` ) 
+    : 
+    console.log( `${numberB} es menor que ${numberA}` )
+
+numberA !== numberB ?(
+    numberA < numberB ?
+    console.log(`${numberA} es menor que ${numberB}`)
+    :
+    console.log(`${numberB} es menor que ${numberA}`)
+)
+:
+console.log(`${numberA} es igual a ${numberB}`)
