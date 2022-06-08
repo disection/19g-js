@@ -329,33 +329,86 @@
     },
   ];
 
-const filterUsers = (strToFilter) => {
-    // sentencias
+// const filterUsers = (strToFilter) => {
+//     // sentencias
+//     strToFilter = strToFilter.toLowerCase()
+//     let usersFind = filterUsers.filter( ( )=>{
+//         if (
+//             users.name.toLowerCase().includes(strToFilter) ||
+//             users.username.toLowerCase().includes(strToFilter) ||
+//             users.email.toLowerCase().includes(strToFilter)
+//         ) {
+//             return filterUsers            
+//         }
+
+//     })
+
+
+// }
+// let inputSearch = document.getElementById('filter__user')
+//     inputSearch.addEventListener('keyup', () =>{
+//     //obtener el valor a buscar
+//     let searchTerm = inputSearch.value
+//     //filtrar usuarios
+//     let userFiltrados = filterUsers(searchTerm)
+//     //imprimirlos en consola
+//     console.log(userFiltrados) 
+//     //agregar al layouy en #lista__users
+
+// })
+
+
+// filterUsers(users)
+//strToFilter = document.querySelector('#filterUser').value
+
+// function string to filter
+const filterUsers = ( strToFilter ) => {
     strToFilter = strToFilter.toLowerCase()
-    let usersFind = filterUsers.filter( ( )=>{
+    let filtereUsers = users.filter( (user) => {
         if (
-            users.name.toLowerCase().includes(strToFilter) ||
-            users.username.toLowerCase().includes(strToFilter) ||
-            users.email.toLowerCase().includes(strToFilter)
+            user.name.toLowerCase().includes(strToFilter) ||
+            user.username.toLowerCase().includes(strToFilter) ||
+            user.email.toLowerCase().includes(strToFilter)
         ) {
-            return filterUsers            
+            //sentencias
+            return user
         }
 
     })
+    return filtereUsers
+}
 
+// function paint user layout
+const paintUsers =(paintUser)=>{
+    let listUser = paintUser.reduce((acc, user) => {
+        return acc += `
+        <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">${user.name}</h5>
+                <small>${user.phone}</small>
+            </div>
+            <p class="mb-1">${user.email}</p>
+            
+        </a>
+        `        
+      }, '')
+      
+      document.querySelector('.list-group').innerHTML = listUser
 
 }
-let inputSearch = document.getElementById('filter__user')
-    inputSearch.addEventListener('keyup', () =>{
-    //obtener el valor a buscar
+
+// when loadpage, loaded all users
+document.addEventListener('DOMContentLoaded', paintUsers(users) )
+
+// fuction
+let inputSearch = document.querySelector('#filter__user')
+inputSearch.addEventListener('keyup', ()=>{
+    // obtener el valor a buscar
     let searchTerm = inputSearch.value
-    //filtrar usuarios
-    let userFiltrados = filterUsers(searchTerm)
-    //imprimirlos en consola
-    console.log(userFiltrados) 
-    //agregar al layouy en #lista__users
-
+    // filtrar los usuarios
+    let usersFiltrados = filterUsers(searchTerm)
+    // imprimirlos en consola
+    console.log(usersFiltrados)       
+    // agregarlos al layout en #lista__users
+    paintUsers(usersFiltrados)
 })
-
-
-filterUsers(users)
