@@ -9,9 +9,11 @@
 // document.getElementsByTagName ('h2')[1] -> agregar un elemento mediante el tag
 // document.createElement ('h3') -> crear un elemento
 // document.getElementById ('idInput').value -> selecciona el elemento y le dices que propiedad quieres obtener el valor de un input
-// ->
 
-// Browser Object Model (BOM)
+// element.addEventListener('click', callback)->
+// element.addEventListener('click', ()=> {...})
+
+// Browser Object Model (BOM)--------------------------
 // Comunicarse con el navegador
 
 // viewport size
