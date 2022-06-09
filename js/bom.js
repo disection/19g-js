@@ -1,14 +1,14 @@
 //DOM
-// Document Object Model ->
-// Manipular el documento html ->
-// document.querySelector('item') ->
-// element.classlist.add('clasenueva') ->
-// element.innerHTML = 'nuevohtml' ->
-// element.addAtrubute('propiedad', 'valor') ->agregar atributo
-// element.getAttribute ('propiedad') ->
-// document.getElemtsByTagName ('h2')[1] -> agregar un elemento mediante el tag
-// document.createElement ('h3') ->
-// document.getElemenById ()->
+// Document Object Model---------------
+// Manipular el documento html
+// document.querySelector('item') -> como seleccionar un elemento
+// element.classlist.add('clasenueva') -> como agregar una clase
+// element.innerHTML = 'nuevohtml' -> modificar el html de un elemento
+// element.addAtrubute('propiedad', 'valor') -> agregar atributo a un elemnto html
+// element.getAttribute ('propiedad') -> obtener el atributo de un elemento y lo que regresa es el valor
+// document.getElementsByTagName ('h2')[1] -> agregar un elemento mediante el tag
+// document.createElement ('h3') -> crear un elemento
+// document.getElementById ('idInput').value -> selecciona el elemento y le dices que propiedad quieres obtener el valor de un input
 // ->
 
 // Browser Object Model (BOM)
