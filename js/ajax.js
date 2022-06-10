@@ -80,12 +80,13 @@ const filterUsers = ( strToFilter ) => {
     return filteredUsers
   }
 
-
-  
-  
+ 
   
   // cuando cargue la pagina, cargar todos los usuarios
-  document.addEventListener('DOMContentLoaded',  printUserList(users) )
+let searchBox = document.querySelector('#filter__user')
+searchBox.addEventListener('keyup',  ()=>{
+    printUserList(filterUsers(searchBox.value))
+} )
   
   
 
