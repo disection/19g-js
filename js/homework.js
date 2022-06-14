@@ -44,16 +44,13 @@ const printAllPosts = (allPosts) => {
   let template = ''
   for( post in allPosts) {
       let { title, body, date } = allPosts[post]
-      template += `
-          <div class="col-12 col-md-3">
-              <div class="card" >
-                  <div class="card-body">
-                      <h5 class="card-title">${title}</h5>
-                      <p class="card-text">${body}</p>
-                      <p class="card-text">Last updated ${date}</p>
-                  </div>
-              </div>
-          </div>
+      template += `      
+        <div class="col-md-4 ">
+            <h2>${title}</h2>
+            <p>${body} </p>
+            <p>${date}</p>
+            <p> <a class="btn btn-primary" href="#" role="button">Seguir leyendo &raquo;</a></p>
+        </div>           
       `
   }
   document.querySelector('.all__posts').innerHTML = template
