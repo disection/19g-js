@@ -1,10 +1,4 @@
 document.addEventListener( 'DOMContentLoaded', () =>{
-    //obtener el id    
-    let idKoder = window.location.search.substring(10)
-    console.log(idKoder)
-    if (idKoder !== '') {
-        ajaxXHR(loadKoder, `/koders/${idKoder}.json`, 'GET')
-    }    
 })
 
 // Se rellenan los campos 
@@ -18,6 +12,13 @@ const loadKoder = (objKoder) => {
     document.getElementById('history').value = history
     document.getElementById('bootcamp').value = bootcamp
 }
+
+//obtener el id 
+let idKoder = window.location.search.substring(10)
+    console.log(idKoder)
+    if (idKoder !== '') {
+        ajaxXHR(loadKoder, `/koders/${idKoder}.json`, 'GET')
+    } 
 
 // Mensaje exitoso ----------------------------------
 const koderUpdate = (response) => {
@@ -71,6 +72,6 @@ const koderUpdate = (response) => {
             // se llama la función para poder tener comunicación con servidor
             // se mandan los atributos de la función
             
-            ajaxXHR( koderUpdate, `/koders/${objKoder}.json`,'PATCH', newKoder )
+            ajaxXHR( koderUpdate, `/koders/${idKoder}.json`,'PATCH', newKoder )
         }
     })
