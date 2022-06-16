@@ -10,7 +10,7 @@ const koderCreate = (resp) =>{
         // timer
         setTimeout( () => {
             document.querySelector('#wrap__alert').classList.add('d-none')
-            document.querySelector('#id__koder').innerHTML = ''
+            
         }, 4000)
 
         // clear form
@@ -20,6 +20,15 @@ const koderCreate = (resp) =>{
         document.getElementById('city').value = ''
         document.getElementById('history').value = ''
         document.getElementById('bootcamp').value = ''
+
+        
+
+        // timer
+        setTimeout( () => {
+            document.querySelector('#wrap__alert').classList.add('d-none')
+            window.location.href = `/interior.html?koderkey=${resp.name}`        
+        }, 4000) 
+        //
         
     }
     
@@ -34,7 +43,11 @@ btnSave.addEventListener('click', () => {
     let city = document.getElementById('city').value.trim()
     let history = document.getElementById('history').value.trim()
     let bootcamp = document.getElementById('bootcamp').value.trim()
-    console.log(name, username, age, city, history, bootcamp)
+
+    let today = new Date();
+    let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    let lastModified = date
+    //console.log(name, username, age, city, history, bootcamp)
     if ( 
         name === '' ||
         username === '' ||
@@ -52,7 +65,8 @@ btnSave.addEventListener('click', () => {
             age: age,
             city: city,
             history: history,
-            bootcamp: bootcamp
+            bootcamp: bootcamp,
+            lastModified: lastModified
         }
         //console.log(newKoder)
 
